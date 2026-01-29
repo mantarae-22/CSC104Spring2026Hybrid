@@ -1,0 +1,32 @@
+/* body styles are global styles that affect the whole page (unless more specific styles are created) */
+body{
+    background-color: rgb(18, 18, 95);
+    color: rgb(231, 224, 224);
+    margin: 0;
+}
+
+header{
+    color: rgb(8, 84, 8);
+    background-color: rgb(215, 200, 180);
+    text-align: center;
+    padding: 20px;
+}
+
+main{
+    padding: 30px;
+}
+
+section{
+    background-color: rgb(215, 200, 180);
+    color:rgb(18, 18, 95);
+    text-align: center;
+    /* rounded corners */
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* make the image smaller; this will only apply to images that are located in a section */
+section img{
+    width: 300px;
+}
