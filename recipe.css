@@ -1,0 +1,78 @@
+ body{
+    background-image: url('./images/bg.jpg');
+    background-size: auto;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(91, 15, 15);
+}
+
+.content-bg{
+    /* rgba allows you to set the transparency of the color; the 4th argument can be 0 to 1 - 0 is more transparent and 1 is opaque (not see through) */
+    background-color:rgba(91, 15, 15, .7);
+    color: whitesmoke;
+    /* this gives us rounded corners */
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;    
+    padding: 20px;        
+}
+
+/* menu styles */
+ul{
+    /* remove the bullets */
+    list-style-type: none;
+    /* remove the padding so the menu buttons will be centered */
+    padding: 0;
+}
+
+li{
+    /* inline to flow next to each other, but block to keep the height */
+    display: inline-block;
+}
+
+/* this will avoid all anchor tags looking like menu buttons */
+li a{
+    padding: 10px;
+    /* margin: top & bottom: 0; left & right: 20px */        
+    margin: 0 20px;
+        /* remove the underline on our links */   
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: white;
+    font-weight: bold;
+}
+
+li a:hover{
+    background-color: rgb(91, 15, 15);
+    color: white;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-item{
+    /* this allows the columns to grow as needed */
+    flex: 1;
+}
+
+.img-recipe{
+    width: 90%;
+    max-height: 400px;  
+    /* helps the images scale properly so they look better */
+    object-fit: cover;
+}
+
+/* make adjustments so that the content looks better on smaller screens */
+@media (max-width: 768px){
+    .flex-container{
+        flex-direction: column;
+    }
+
+    li a{
+        margin: 10px 5px;
+    }
+}
